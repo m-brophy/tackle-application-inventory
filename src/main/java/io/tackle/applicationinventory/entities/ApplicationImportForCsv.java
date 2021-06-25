@@ -3,6 +3,7 @@ package io.tackle.applicationinventory.entities;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+@RegisterForReflection
 @JsonIgnoreProperties({ "createUser", "updateUser", "errorMessage", "valid", "isValid", "filename", "status", "id"})
 public abstract class ApplicationImportForCsv {
     @JsonProperty("Record Type 1")
